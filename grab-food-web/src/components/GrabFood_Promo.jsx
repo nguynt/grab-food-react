@@ -1,7 +1,7 @@
 export default function GrabFood_Promo(props){
     return(
-     <a href="">
-           <div className="xl:w-[280px] w-[170px] relative">
+     <a href="/restaurant">
+           <div className="xl:w-[280px] w-[170px] relative horizontal-scroll-item">
             <div className="absolute bg-green-grab p-[3px] text-[10px] text-white font-bold rounded-sm mt-4 px-2">
                     Promo
                 </div>

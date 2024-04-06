@@ -1,7 +1,7 @@
-import { useState } from 'react';
-export default function Header(){
-    const [color,setColor] = useState("transparent")
+import { useState, useEffect } from 'react';
+export default function Header(menu_state){
     const [ImgHeader,setImgHeader] = useState("https://food.grab.com/static/images/logo-grabfood-white2.svg")
+    const [color,setColor] = useState("transparent")
     const changeColor = () =>{
         if(window.scrollY >=90){
             setColor("white")

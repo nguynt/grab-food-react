@@ -8,7 +8,7 @@ export default function Exp_With_Grab(props){
         </div>
         <div className="flex items-center flex-col">
             <img className="w-[150px] h-[150px]" src="https://food.grab.com/static/images/ilus-cool-features-app.svg"></img>
-            <h1 className="font-bold text-[18px] mt-3 mb-2">More cool features available on the app</h1>
+            <h1 className="font-bold text-[18px]  text-center mt-3 mb-2">More cool features available on the app</h1>
             <p className="text-[12px] w-[400px] text-center">Download Grab app to use other payment methods and enjoy seamless communication with your driver.</p>
             <div className="flex mt-4 gap-6">
                 <a><img src="https://food.grab.com/static/images/logo-appstore.svg"></img></a>
