@@ -51,6 +51,7 @@ function Instructions(){
                     </div>
     );
 }
+
 export default function Restaurant(){
     const containerRef = useRef(null);
   const [startX, setStartX] = useState(null);
@@ -98,6 +99,7 @@ export default function Restaurant(){
     return (
         <div className="bg-[#F7F7F7] h-fit">
             <div className={!closeTab ? 'bg-black/80 w-full h-screen z-10 fixed': undefined}></div>
+
             <Header_Green/>
             <div className="flex justify-center bg-white" >
                     <div className="lg:w-[1200px] p-4 pb-0 w-full bg-white">
@@ -138,6 +140,7 @@ export default function Restaurant(){
                                     
                                 ))}
                             </div>
+
                         </div>
                     ))}
                 </div> 
@@ -196,6 +199,7 @@ export default function Restaurant(){
              
                 </div>
             </div>
+
             <p className="text-center text-sm m-4">We're always working to get the most accurate information. Let us know if you come across anything that's outdated!</p>
             <Footer></Footer>
         </div>);

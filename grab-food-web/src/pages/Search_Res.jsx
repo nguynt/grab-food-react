@@ -47,6 +47,7 @@ export default function searchRes(){
                 </div>
                 </div>
             </div>
+
             <Footer></Footer>
         </div>
 

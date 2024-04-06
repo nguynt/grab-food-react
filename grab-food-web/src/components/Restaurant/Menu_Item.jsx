@@ -1,6 +1,7 @@
 export default function Menu_Item(props){
     return(
         <div className="lg:w-max-[383px] cursor-pointer w-full bg-white p-5 pb-3 rounded-[10px] hover:border-green-grab hover:border-[1px] ">
+
             <div className="flex">
                 <img className="w-26 h-28" src={props.proImg}></img>
                 <div className="w-full p-4 pt-0 pb-0">
