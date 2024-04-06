@@ -1,6 +1,8 @@
 export default function Footer(props){
     return(
-        <div>
+        <div className="bg-green-grab flex justify-center">
+          <div className="w-[1200px]">
+          <div>
             <img className="w-[120px] m-5" src="https://food.grab.com/static/images/logo-grabfood-white2.svg"></img>
             <hr className="m-5 border-[#3AC377]"></hr>
             <div className="grid lg:grid-cols-4 md:grid-cols-4 grid-cols-1 text-white font-bold text-sm">
@@ -37,5 +39,8 @@ export default function Footer(props){
                 </div>
             </div>
         </div>
+          </div>
+        </div>
+      
     )
 }
