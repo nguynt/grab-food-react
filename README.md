@@ -1,2 +1,0 @@
-# grab-food-react
-FE

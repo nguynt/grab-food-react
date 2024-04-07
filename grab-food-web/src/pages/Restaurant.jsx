@@ -100,7 +100,7 @@ export default function Restaurant(){
     };
     return (
         <div className="bg-[#F7F7F7] h-fit">
-            <div className={!closeTab ? 'bg-black/80 w-full h-screen z-10 fixed': undefined}></div>
+            <div onClick ={() => setCloseTab(!closeTab)} className={!closeTab ? 'bg-black/80 w-full h-screen z-10 fixed': undefined}></div>
 
             <Header_Green/>
             <div className="flex justify-center bg-white" >
