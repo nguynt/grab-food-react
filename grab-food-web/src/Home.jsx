@@ -3,52 +3,46 @@ import Header from './components/Header';
 import Form_Location from './components/Form_Location';
 import Grid_Food from './components/Grid_Food';
 import { Food_EV } from './data/data';
-import { Food_Promo } from './data/data';
 import { why_grab } from './data/data';
-import GrabFood_Promo from './components/GrabFood_Promo';
 import Why_GrabFood from './components/Why_GrabFood';
 import Exp_With_Grab from './components/Exp_With_Grab';
 import Footer from './components/Footer';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { useState } from 'react';
+import { bg_data } from './data/bg_data';
+import Slick_Res from './components/Slick_Res';
+import Ask_Home from './components/Ask_Home';
 function App() {
-  const [slickItem, setslickItem] = useState(4)
-  const item = () =>{
-    if(window.innerWidth < 700){
-      setslickItem(2);
-    }
-    else{
-      setslickItem(4)
-    }
-  }
-  window.addEventListener('resize',item);
-  var settings = {
-    infinite: null,
-    speed: 500,
-    slidesToShow: slickItem,
-    slidesToScroll: 1
-  };
+
+  
+  //random bg
+  const rndInt = Math.floor(Math.random() * 3) + 0
   return (
     <div>
        <Header/>
        <div >
-        <img className="w-full h-96 object-cover" src='https://food.grab.com/static/page-home/VN-new-3.jpg'></img>
+        <img className="w-full h-96 object-cover" src={bg_data[rndInt].link}></img>
        </div>
+      
       <div className="flex justify-center" >
         <div style={{width: 1200}}>
-          <Form_Location ></Form_Location>
-          <div className="mt-24 p-4 ">
-              <h1 className="font-bold md:text-4xl text:xl p-4">GrabFood Promo in <span className="text-green-grab">Location</span></h1>
-              <Slider {...settings}>
-                  <GrabFood_Promo {...Food_Promo[0]}/>
-              
-              </Slider>
-            
-              <a href='/searchRes' ><div className=" p-3 text-center text-[#676767]  border-[1px] rounded-md border-[#676767] font-bold mt-3 mb-3 hover:border-green-grab hover:text-green-grab w-full">See all promotions</div></a>
-    
+          <div>
+            <Form_Location ></Form_Location>
+              <div className='flex justify-center mt-32'> 
+                <div className='w-full'>
+                  <h1 className="font-bold md:text-4xl text:xl p-4 ">GrabFood Promo in <span className="text-green-grab">Location</span></h1>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <Slick_Res></Slick_Res>
+      <div className="flex justify-center" >
+          <div style={{width: 1200}}> 
+          <div className='flex justify-center p-4 '> 
+            <div className='w-full'>
+              <a href='/searchRes' ><div className=" p-3 text-center text-[#676767]  border-[1px] rounded-md border-[#676767] font-bold mt-3 mb-3 hover:border-green-grab hover:text-green-grab w-full">See all promotions</div></a>
+            </div>
+          </div>
           <h1 className="font-bold md:text-4xl text:3xl w-full p-4 pb-0">There's something for everyone!</h1>
           <div className="grid lg:grid-cols-4 gap-5 mt-7 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 p-4 pt-0">
             
@@ -74,18 +68,10 @@ function App() {
               <Why_GrabFood {...why_grab[3]}></Why_GrabFood>
               <Why_GrabFood {...why_grab[4]}></Why_GrabFood>
             </ul>
-            <h1 className="font-bold text-4xl w-full mb-4 mt-10">Frequently Asked Questions</h1>
-            <h1 className="font-bold text-2xl w-full mb-4 mt-10">What is GrabFood?</h1>
-            <p>
-            GrabFood is the fastest Food Delivery service in Vietnam. We have curated all your favorite dishes, restaurants, and cuisines to help you grab your food in the easiest & quickest way possible. Find and order your favorite cuisines across Vietnam - order food online in just a few taps, from Lifted Coffee & Brunch - Hàng Gà for Breakfast, Maazi Indian - Nhà Hàng Ấn Độ for Lunch, Bún Cá Chấm Gốc Đa - Vũ Thạnh for Dinner! We are here to satisfy your hunger with a wide selection of merchant partners in Vietnam.
-
-
-            </p>
-            <button className=" p-3 text-[#676767]  border-[1px] rounded-md border-[#676767] font-bold mt-3 mb-3 hover:border-green-grab hover:text-green-grab w-full">Read more</button>
+           <Ask_Home></Ask_Home>
           </div>
          
-        </div>
-     
+          </div>
         </div>
         <div className="bg-[#F7F7F7] flex justify-center">
           <div className="w-[1200px]">

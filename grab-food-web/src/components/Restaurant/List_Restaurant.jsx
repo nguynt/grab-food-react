@@ -12,8 +12,6 @@ export default function ListRestaurant(props){
                 <h1 className="font-bold text-lg mt-3  max-sm:text-sm max-sm:mt-0">{props.name}</h1>
                 <p className="text-[#707070] text-sm mb-2 mt-3 max-sm:mt-0 max-sm:text-sm">{props.category}</p>
                 <div className="flex text-[#707070] text-sm mt-1 max-sm:text-sm">
-
-                    
                     <div className="flex">
                         <img width={23} className="max-sm:w-[15px]" src="https://food.grab.com/vn/en/static/images/icons/icon-star.svg"></img>
                         &nbsp;&nbsp;
@@ -24,11 +22,9 @@ export default function ListRestaurant(props){
                         <img className="max-sm:w-[15px]" src="https://food.grab.com/vn/en/static/images/icons/icon-clock.svg"></img>
                         &nbsp;&nbsp;
                         <span>{props.time}</span>
-                        
                     </div>
                     &nbsp;&nbsp;&nbsp;
-                    <span> {props.location}</span>
-        
+                    <span> {props.location}</span>      
                 </div>
                 <div className="flex justify-center text-sm">
 

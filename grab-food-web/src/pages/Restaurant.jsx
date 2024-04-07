@@ -9,9 +9,11 @@ import Footer from '../components/Footer';
 
 function Button_Scroll(props){
     return (
-        <div className="btn_active_res horizontal-scroll-item">
-            <Link  to={props.menuName} spy={true} smooth={true} offset={-150} duration={500}>
-                {props.menuName}
+        <div className="btn_active_res horizontal-scroll-item ">
+            <Link className="max-sm:text-sm "  to={props.menuName} spy={true} smooth={true} offset={-150} duration={500}>
+             
+                    {props.menuName}
+           
             </Link>
         </div>
     );
@@ -146,7 +148,7 @@ export default function Restaurant(){
                 </div> 
             </div>
             
-            <div className={!closeTab ? 'max-sm:w-full w-[505px] h-full fixed top-0 z-10 right-0 bg-gray ':' w-[505px] max-sm:w-full h-full fixed top-0 z-0 left-[-100%] bg-gray '}>
+            <div className={!closeTab ? 'menu max-sm:w-full w-[505px] h-full fixed top-0 z-10 right-0 bg-gray ':' w-[505px] max-sm:w-full h-full fixed top-0 z-0 left-[-100%] bg-gray '}>
                 <div className=" fixed w-full bg-white p-5 m-[1px]">
                     <button onClick ={() => setCloseTab(!closeTab)}><img className="w-[20px]" src="https://static.thenounproject.com/png/53235-200.png"></img></button>
                 </div>
