@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes,HashRouter} from 'react-router-dom';
+import { BrowserRouter, Routes,Route} from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 
@@ -11,9 +11,9 @@ function App() {
     <div>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-            <HashRouter path="/" element={<Home />} />
-            <HashRouter path='/restaurant' element={<Restaurant></Restaurant>}></HashRouter>
-            <HashRouter path='/searchRes' element={<Search_Res></Search_Res>}></HashRouter>
+            <Route path="/" element={<Home />} />
+            <Route path='/restaurant' element={<Restaurant></Restaurant>}/>
+            <Route path='/searchRes' element={<Search_Res></Search_Res>}/>
         </Routes>
       </BrowserRouter>
     </div>
