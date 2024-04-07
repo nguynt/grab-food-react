@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/grab-food-react/static/css/main.a42094fe.css",
+    "main.js": "/grab-food-react/static/js/main.3a795f74.js",
+    "static/media/choose_location.png": "/grab-food-react/static/media/choose_location.15f49f3b8bc4f5947889.png",
+    "static/media/location_Icon.png": "/grab-food-react/static/media/location_Icon.2279cfbd611b0f6cdf9f.png",
+    "static/media/slick.svg": "/grab-food-react/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/grab-food-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/grab-food-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/grab-food-react/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/grab-food-react/index.html",
+    "main.a42094fe.css.map": "/grab-food-react/static/css/main.a42094fe.css.map",
+    "main.3a795f74.js.map": "/grab-food-react/static/js/main.3a795f74.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a42094fe.css",
+    "static/js/main.3a795f74.js"
+  ]
+}
