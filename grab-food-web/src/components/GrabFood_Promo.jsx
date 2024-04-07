@@ -8,7 +8,7 @@ export default function GrabFood_Promo(props){
             <img className="rounded-md max-sm:w-[215px]" src={props.image}></img>
             <h1 className="font-bold text-sm lg:text-xl mt-3">{props.name}</h1>
             <p  className="max-sm:text-sm max-sm:mt-1 text-[#707070] mt-4">{props.category}</p>
-            <div className="flex max-sm:text-sm text-[#707070] mt-1">
+            <div className="flex max-sm:text-sm max-[400px]:text-[10px] text-[#707070] mt-1">
                 
                 <div className="flex">
                     <img width={23} className="max-sm:w-[18px]" src="https://food.grab.com/vn/en/static/images/icons/icon-star.svg"></img>
@@ -26,7 +26,7 @@ export default function GrabFood_Promo(props){
                 <span> {props.location}</span>
        
             </div>
-            <div className="flex max-sm:text-sm justify-center">
+            <div className="flex max-sm:text-sm justify-center max-[400px]:text-[12px]">
                 <img className="max-sm:w-[18px]" src="https://food.grab.com/vn/en/static/images/icons/icon-promo-tag.svg"></img>
                 &nbsp;
                 <span>{props.promo}</span>

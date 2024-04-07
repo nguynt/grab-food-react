@@ -3,8 +3,8 @@ import Header_Green from '../components/Header_Green'
 import Info from "../components/Restaurant/Info";
 import Menu_Item from "../components/Restaurant/Menu_Item";
 import { Food_Promo } from "../data/data";
-import React, {useRef, useEffect, useState } from 'react';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import React, {useRef, useState } from 'react';
+import { Link,animateScroll as scroll, scrollSpy } from 'react-scroll';
 import Footer from '../components/Footer';
 
 function Button_Scroll(props){
@@ -46,11 +46,11 @@ function Option(props){
 function Instructions(){
     return(
         <div className="bg-white w-[505px] max-sm:w-full p-4 mt-2 ">
-                        <div className="flex">
-                            <h1 className="font-bold">Special instruction</h1>&nbsp; <span > optional </span>
-                        </div>
-                        <input className="mt-2 hover:border-green-grab w-[98%] p-3 rounded-e-xl rounded-s-xl focus:border-[1px] focus:border-green-grab border-[1px]" placeholder="E.g No onions please"></input>
-                    </div>
+            <div className="flex">
+                <h1 className="font-bold">Special instruction</h1>&nbsp; <span > optional </span>
+            </div>
+            <input className="mt-2 hover:border-green-grab w-[98%] p-3 rounded-e-xl rounded-s-xl focus:border-[1px] focus:border-green-grab border-[1px]" placeholder="E.g No onions please"></input>
+        </div>
     );
 }
 
@@ -111,20 +111,18 @@ export default function Restaurant(){
             <div className={`flex justify-center w-full bg-white transition-transform  ${fixedMenu}`} >
                 <div className="lg:w-[1200px] p-4 pb-0 w-full bg-white">
                 <div className="bg-white">
-                   
-                            <div>
-                                    <div className={`bg-white flex mt-3 p-1 horizontal-scroll-container`}
-                                    ref={containerRef}
-                                    onMouseDown={handleMouseDown}
-                                    onMouseMove={handleMouseMove}
-                                    onMouseUp={handleMouseUp}
-                                    onMouseLeave={handleMouseLeave}>
-                                        {Food_Promo[0].menu.map((itemMenu,indexMenu) =>(
-                                            <Button_Scroll {...itemMenu}/>
-                                        ))}
-                                    </div>
+                        <div>
+                            <div className={`bg-white flex mt-3 p-1 horizontal-scroll-container`}
+                            ref={containerRef}
+                            onMouseDown={handleMouseDown}
+                            onMouseMove={handleMouseMove}
+                            onMouseUp={handleMouseUp}
+                            onMouseLeave={handleMouseLeave}>
+                                {Food_Promo[0].menu.map((itemMenu,indexMenu) =>(
+                                    <Button_Scroll {...itemMenu}/>
+                                ))}
                             </div>
-                      
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,15 +137,12 @@ export default function Restaurant(){
                                     <div onClick ={() => setCloseTab(!closeTab) }>
                                         <Menu_Item  {...itemPro}></Menu_Item>
                                     </div>
-                                    
                                 ))}
                             </div>
-
                         </div>
                     ))}
                 </div> 
             </div>
-            
             <div className={!closeTab ? 'menu max-sm:w-full w-[505px] h-full fixed top-0 z-10 right-0 bg-gray ':' w-[505px] max-sm:w-full h-full fixed top-0 z-0 left-[-100%] bg-gray '}>
                 <div className=" fixed w-full bg-white p-5 m-[1px]">
                     <button onClick ={() => setCloseTab(!closeTab)}><img className="w-[20px]" src="https://static.thenounproject.com/png/53235-200.png"></img></button>
@@ -176,19 +171,12 @@ export default function Restaurant(){
                             <Option title = "Thêm 2 Gói Tương Cà"></Option>
                             <hr className="w-[99%] border-gray flex justify-center"></hr>
                             <Option title = "Thêm 2 Gói Tương Cà"></Option>
-    
                         </div>
                     </div>
-                    
                     <Instructions></Instructions>
                     <div className="mt-20"></div>
-                  
-                        
-                            
-                   
                 </div>
                 <div className="bg-white max-sm:w-full w-[505px] p-5 items-center justify-between fixed bottom-0 flex">
-                
                     <div>
                         <img src="https://food.grab.com/static/images/icons/icon-minus-bordered.svg"></img>
                     </div>
@@ -196,12 +184,9 @@ export default function Restaurant(){
                     <div>
                         <img src="https://food.grab.com/static/images/icons/icon-plus-bordered.svg"></img>
                     </div>
-                    
                     <button className="bg-green-grab max-sm:w-[250px] w-[300px] font-bold text-white rounded-md p-3">Add to Basket - 10.000đ</button>
-             
                 </div>
             </div>
-
             <p className="text-center text-sm m-4">We're always working to get the most accurate information. Let us know if you come across anything that's outdated!</p>
             <Footer></Footer>
         </div>);

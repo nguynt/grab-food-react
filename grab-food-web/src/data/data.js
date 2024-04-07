@@ -64,7 +64,7 @@ export const Food_EV =[
 ];
 export const Food_Promo =[
     {
-        image:'https://food-cms.grab.com/compressed_webp/merchants/5-C32ZCPWVEVBCGX/hero/626144bb942b4a54938e355384c329cc_1671691312865518888.webp',
+        image:'https://food-cms.grab.com/compressed_webp/merchants/5-C6CGT8KKVX6GJ6/hero/d60d1d4f104b44d98da97be70ad8a1cd_1704688173218275803.webp',
         name:'Cơm Mẹ Nấu',
         category:'Rice, Bun Dau Mam Tom, Pho Bo',
         rate:'5',
@@ -184,7 +184,7 @@ export const Food_Promo =[
         ]
     },
     {
-        image:'https://food-cms.grab.com/compressed_webp/merchants/VNGFVN000002qn/hero/29f794daa7344f13be62f45927aba2de_1663539629745752204.webp',
+        image:'https://food-cms.grab.com/compressed_webp/merchants/VNGFVN000003dz/hero/6239aaaf0da14509b58ea9523e5ce557_1682659787771674135.webp',
         name:'Bánh Mì Huynh Hoa',
         category:'Bread, Snack, Fast Food',
         rate:'4.7',
