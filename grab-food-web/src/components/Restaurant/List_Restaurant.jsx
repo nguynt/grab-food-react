@@ -9,10 +9,9 @@ export default function ListRestaurant(props){
                 <img className="h-[160px] object-cover rounded-md max-sm:w-[100px] max-sm:h-[100px]  max-sm:object-cover w-[100%] " src={props.image}></img>
             </div>
             <div className="max-sm:pl-4 pt-0">
-                <h1 className="font-bold text-xl mt-3  max-sm:text-sm max-sm:mt-0">{props.name}</h1>
-                <p className="text-[#707070] mt-4 max-sm:mt-0 max-sm:text-sm">{props.category}</p>
-                <div className="flex text-[#707070] mt-1 max-sm:text-sm">
-                    
+                <h1 className="font-bold text-lg mt-3  max-sm:text-sm max-sm:mt-0">{props.name}</h1>
+                <p className="text-[#707070] text-sm mb-2 mt-3 max-sm:mt-0 max-sm:text-sm">{props.category}</p>
+                <div className="flex text-[#707070] text-sm mt-1 max-sm:text-sm">
                     <div className="flex">
                         <img width={23} className="max-sm:w-[15px]" src="https://food.grab.com/vn/en/static/images/icons/icon-star.svg"></img>
                         &nbsp;&nbsp;
@@ -23,13 +22,12 @@ export default function ListRestaurant(props){
                         <img className="max-sm:w-[15px]" src="https://food.grab.com/vn/en/static/images/icons/icon-clock.svg"></img>
                         &nbsp;&nbsp;
                         <span>{props.time}</span>
-                        
                     </div>
                     &nbsp;&nbsp;&nbsp;
-                    <span> {props.location}</span>
-        
+                    <span> {props.location}</span>      
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center text-sm">
+
                     <img className="max-sm:w-[15px]" src="https://food.grab.com/vn/en/static/images/icons/icon-promo-tag.svg"></img>
                     &nbsp;
                     <span>{props.promo}</span>

@@ -22,22 +22,32 @@ export default function searchRes(){
                         <div>
                          <SearchItem/>
                         </div>
-                        <Item_Dish></Item_Dish>
+                        <div className="flex gap-6 overflow-x-hidden mb-5">
+                            <Item_Dish/>
+                            <Item_Dish/>
+                            <Item_Dish/>
+                       
+                        </div>
                     </div>
             </div>
             <div>
-            <div className="flex mt-4 justify-center bg-white" >
+            <div className="flex mt-2 justify-center bg-white" >
+            <h1 className="w-[1200px] p-4 text-3xl max-sm:text-sm font-bold">Food Promos in <span className="text-green-grab">136/46B Trần Quang Diệu, P.14, Q.3, Hồ Chí Minh, 7000...</span></h1>
+
+            </div>
+            <div className="flex  justify-center bg-white" >
                 <div className="grid gap-3 p-4 w-[1200px] grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-3">
-                    <ListRestaurant {...Food_Promo[0]}/>
-                    <ListRestaurant {...Food_Promo[1]}/>
-                    <ListRestaurant {...Food_Promo[0]}/>
-                    <ListRestaurant {...Food_Promo[0]}/>
-                    <ListRestaurant {...Food_Promo[1]}/>
-                    <ListRestaurant {...Food_Promo[0]}/>
-                    <ListRestaurant {...Food_Promo[1]}/>
+                            <ListRestaurant {...Food_Promo[0]}/>
+                            <ListRestaurant {...Food_Promo[1]}/>
+                            <ListRestaurant {...Food_Promo[0]}/>
+                            <ListRestaurant {...Food_Promo[0]}/>
+                            <ListRestaurant {...Food_Promo[1]}/>
+                            <ListRestaurant {...Food_Promo[0]}/>
+                            <ListRestaurant {...Food_Promo[1]}/>
+                </div>
                 </div>
             </div>
-            </div>
+
             <Footer></Footer>
         </div>
 

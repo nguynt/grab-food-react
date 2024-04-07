@@ -1,3 +1,6 @@
+.menu {
+  transition: left 0.3s ease;
+}
 .btn_active_res .active{
 
   cursor: pointer;
