@@ -1,6 +1,6 @@
 export default function ListRestaurant(props){
     return(
-     <a href="/restaurant">
+     <a href="/grab-food-react/#/restaurant">
            <div className="w-[100%] relative max-sm:flex  ">
             <div className="absolute bg-green-grab p-[3px] text-[10px] text-white font-bold rounded-sm max-sm:mt-2 mt-4 px-2">
                     Promo
