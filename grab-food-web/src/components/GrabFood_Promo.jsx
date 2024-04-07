@@ -1,6 +1,6 @@
 export default function GrabFood_Promo(props){
     return(
-     <a href="/restaurant">
+     <a href="/grab-food-react/#/restaurant">
            <div className="lg:w-[280px] md:w-[255px]  relative horizontal-scroll-item">
             <div className="absolute bg-green-grab p-[3px] text-[10px] text-white font-bold rounded-sm mt-4 px-2">
                     Promo
