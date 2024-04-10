@@ -40,7 +40,7 @@ function App() {
           <div style={{width: 1200}}> 
           <div className='flex justify-center p-4 '> 
             <div className='w-full'>
-              <a href='/searchRes' ><div className=" p-3 text-center text-[#676767]  border-[1px] rounded-md border-[#676767] font-bold mt-3 mb-3 hover:border-green-grab hover:text-green-grab w-full">See all promotions</div></a>
+              <a href='/#/searchRes' ><div className=" p-3 text-center text-[#676767]  border-[1px] rounded-md border-[#676767] font-bold mt-3 mb-3 hover:border-green-grab hover:text-green-grab w-full">See all promotions</div></a>
             </div>
           </div>
           <h1 className="font-bold md:text-4xl text:3xl w-full p-4 pb-0">There's something for everyone!</h1>

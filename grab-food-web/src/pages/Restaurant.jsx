@@ -92,24 +92,19 @@ export default function Restaurant(){
     window.addEventListener('scroll',fixedMenufunc)
     //state close menu
     const [closeTab, setCloseTab] = useState(true);
-    const handleMenuSelect = () => {
-        setCloseTab(true);
-    };
-    const handleMenuSelected = () => {
-        setCloseTab(false);
-    };
+
     return (
         <div className="bg-[#F7F7F7] h-fit">
             <div onClick ={() => setCloseTab(!closeTab)} className={!closeTab ? 'bg-black/80 w-full h-screen z-10 fixed': undefined}></div>
 
             <Header_Green/>
             <div className="flex justify-center bg-white" >
-                    <div className="lg:w-[1200px] p-4 pb-0 w-full bg-white">
+                    <div className="max-w-[1200px] p-4 pb-0 w-full bg-white">
                         <Info {...Food_Promo[0]}></Info>
                     </div>
             </div>
             <div className={`flex justify-center w-full bg-white transition-transform  ${fixedMenu}`} >
-                <div className="lg:w-[1200px] p-4 pb-0 w-full bg-white">
+                <div className="max-w-[1200px] p-4 pb-0 w-full bg-white">
                 <div className="bg-white">
                         <div>
                             <div className={`bg-white flex mt-3 p-1 horizontal-scroll-container`}
@@ -132,7 +127,7 @@ export default function Restaurant(){
                         <div name={itemMenu.menuName}>
                             <h1 className="text-4xl font-bold p-4">
                                 {itemMenu.menuName}</h1>
-                            <div  key={indexMenu} className="grid lg:grid-cols-3 gap-5 grid-cols-1 lg:w-[1200px] p-4 w-full">
+                            <div  key={indexMenu} className="grid lg:grid-cols-3 gap-5 max-sm:grid-cols-1 max-w-[1200px] p-4 w-full auto-rows-max">
                                 {itemMenu.item.map((itemPro,indexPro) =>(
                                     <div onClick ={() => setCloseTab(!closeTab) }>
                                         <Menu_Item  {...itemPro}></Menu_Item>
