@@ -1,3 +1,5 @@
+
+
 export const why_grab =[
     {
         title:'Quickest',
@@ -76,30 +78,30 @@ export const Food_Promo =[
             menuName:'Cơm Mẹ Nấu',
             item:[
                 {
-                    proName:'Cơm',
-                    proImg:'https://food-cms.grab.com/compressed_webp/items/VNITE2023051806383208118/detail/menueditor_item_cbf5698b95f04cf5856d0f6d5d15f7cc_1687935730644661151.webp',
-                    quantity:'123123',
-                    descriptions:'Ăn no thì thôi',
-                    price:'0đ',
+                    proName:'GrabF 99k T04',
+                    proImg:'https://food-cms.grab.com/compressed_webp/items/VNITE20230814035121092392/detail/d1697d632df240b199d65a4075d99a49_1712538607714353542.webp',
+                    quantity:'ABC',
+                    descriptions:'1 CJ + 2 Reg Spag + 1 Reg BBQ FF + 2 Reg Pepsi',
+                    price:'99.000',
                 },
                 {
-                    proName:'Cơm',
-                    proImg:'https://food-cms.grab.com/compressed_webp/items/VNITE2023051806383208118/detail/menueditor_item_cbf5698b95f04cf5856d0f6d5d15f7cc_1687935730644661151.webp',
+                    proName:'2 Gà giòn+2 Mì Ý+2 Cơm Gà giòn+2 Khoai vừa+2 Bánh xoài đào+4 Nước Lớn (CB322)',
+                    proImg:'https://food-cms.grab.com/compressed_webp/items/VNITE20210616150002075694/detail/052cb5524fe5471297c042a629493422_1632812357853647750.webp',
                     quantity:'123123',
                     descriptions:'Ăn no thì thôi',
-                    price:'0đ',
+                    price:'322.000',
                 },
                 {
-                    proName:'Cơm',
-                    proImg:'https://food-cms.grab.com/compressed_webp/items/VNITE2023051806383208118/detail/menueditor_item_cbf5698b95f04cf5856d0f6d5d15f7cc_1687935730644661151.webp',
+                    proName:'Chickenjoy + 1 Spaghetti + 1 Reg French Fries + 2 Reg Softdrink (CB145)',
+                    proImg:'https://food-cms.grab.com/compressed_webp/items/VNITE20230427065103030152/detail/2f78ce4849884d6e99e64c3577a82c91_1682578263362205178.webp',
                     quantity:'123123',
                     descriptions:'Ăn no thì thôi',
-                    price:'0đ',
+                    price:'145.000',
                 },
                 
                 {
-                    proName:'Canh',
-                    proImg:'https://food-cms.grab.com/compressed_webp/items/VNITE2023051806371441757/detail/menueditor_item_3ab6fd3c39464e1eb4e83fbb7e776a60_1687935781608954475.webp',
+                    proName:'C2 Chickenjoy + 2 Spaghetti + 1 Reg French Fries + 2 Reg Softdrinkanh',
+                    proImg:'https://food-cms.grab.com/compressed_webp/items/VNITE20230427065103071365/detail/9ae75dfdf72a4d66b6f401276c5adcb1_1682578263689330782.webp',
                     quantity:'1709',
                     descriptions:'Không giới hạn!',
                     price:'0đ',

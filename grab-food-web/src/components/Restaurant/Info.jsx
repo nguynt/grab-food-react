@@ -15,11 +15,11 @@ export default function Info(props){
                 <div className="flex">
                     <img src="https://food.grab.com/vn/en/static/images/icons/icon-clock.svg"></img>
                     &nbsp;&nbsp;
-                    <span>{props.time}</span>
+                    <span>{props.timeDelivery} mins</span>
                     
                 </div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span> {props.location}</span>
+                <span> {props.location.address}</span>
        
             </div>
             <div><span className="text-[15px]">Opening Hours</span>  &nbsp;&nbsp; <span className="text-[15px] text-[#707070]">Today  00:00-23:59</span></div>
