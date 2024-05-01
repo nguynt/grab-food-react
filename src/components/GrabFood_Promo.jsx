@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 export default function GrabFood_Promo(props){
     return(
-     <Link to={`restaurant/${props._id}`}>
+     <Link to={`/restaurant/${props._id}`}>
            <div className="lg:w-[280px] md:w-[255px]  relative horizontal-scroll-item">
             <div className="absolute bg-green-grab p-[3px] text-[10px] text-white font-bold rounded-sm mt-4 px-2">
                     Promo

@@ -4,7 +4,7 @@ export default function ListRestaurant(props){
     console.log(process.env)
 
     return(
-     <Link to={`restaurant/${props._id}`}>
+     <Link to={`/restaurant/${props._id}`}>
            <div className="w-[100%] relative max-sm:flex  ">
             <div className="absolute bg-green-grab p-[3px] text-[10px] text-white font-bold rounded-sm max-sm:mt-2 mt-4 px-2">
                     Promo
