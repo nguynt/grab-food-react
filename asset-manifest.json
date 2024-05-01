@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/grab-food-react/static/css/main.c6aa1262.css",
-    "main.js": "/grab-food-react/static/js/main.f9c60976.js",
+    "main.css": "/grab-food-react/static/css/main.68704850.css",
+    "main.js": "/grab-food-react/static/js/main.57ea0379.js",
     "static/media/choose_location.png": "/grab-food-react/static/media/choose_location.15f49f3b8bc4f5947889.png",
     "static/media/location_Icon.png": "/grab-food-react/static/media/location_Icon.2279cfbd611b0f6cdf9f.png",
     "static/media/slick.svg": "/grab-food-react/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -9,11 +9,11 @@
     "static/media/slick.ttf": "/grab-food-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/grab-food-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/grab-food-react/index.html",
-    "main.c6aa1262.css.map": "/grab-food-react/static/css/main.c6aa1262.css.map",
-    "main.f9c60976.js.map": "/grab-food-react/static/js/main.f9c60976.js.map"
+    "main.68704850.css.map": "/grab-food-react/static/css/main.68704850.css.map",
+    "main.57ea0379.js.map": "/grab-food-react/static/js/main.57ea0379.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6aa1262.css",
-    "static/js/main.f9c60976.js"
+    "static/css/main.68704850.css",
+    "static/js/main.57ea0379.js"
   ]
 }
