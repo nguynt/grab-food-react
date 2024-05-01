@@ -11,6 +11,7 @@ import { useState } from 'react';
 import { bg_data } from './data/bg_data';
 import Slick_Res from './components/Slick_Res';
 import Ask_Home from './components/Ask_Home';
+import { Link } from 'react-router-dom';
 function App() {
 
   //random bg
@@ -40,7 +41,7 @@ function App() {
           <div className='flex justify-center p-4 '> 
             <div className='w-full'>
 
-              <a href='/searchRes' ><div className=" p-3 text-center text-[#676767]  border-[1px] rounded-md border-[#676767] font-bold mt-3 mb-3 hover:border-green-grab hover:text-green-grab w-full">See all promotions</div></a>
+              <Link to='/searchRes' ><div className=" p-3 text-center text-[#676767]  border-[1px] rounded-md border-[#676767] font-bold mt-3 mb-3 hover:border-green-grab hover:text-green-grab w-full">See all promotions</div></Link>
             </div>
           </div>
           <h1 className="font-bold md:text-4xl text:3xl w-full p-4 pb-0">There's something for everyone!</h1>
